@@ -15,5 +15,3 @@ cancel_icon.addEventListener("click", function() {
     menu_display.classList.add("hidden");
     container.style.position = "relative";
 })
-
-
