@@ -34,17 +34,22 @@ Enter.addEventListener("click", function () {
     }
 
     // Use a flag to track if a matching entry is found
-    let foundMatch = false;
+    let userFound = false;
 
-    // Look if the email already exists in the reserved data
     signedPersons.forEach(data => {
         if (data.email === Email.value && data.password === Password.value) {
+            userFound = true;
             window.location.href = "main.html";
-            foundMatch = true;
+        } else if (data.email === Email.value && data.password !== Password.value) {
+            userFound = true;
+            alert("Wrong Password!");
         }
     });
-
-    if (!foundMatch) alert("You didn't sign up before with that email!");
+    
+    if (!userFound) {
+        alert("You didn't sign up before with that email!");
+    }
+    
 });
 
 // sign-up Processing:
@@ -74,6 +79,3 @@ signUpButton.addEventListener("click", function () {
         alert("Email or Password is not valid!");
     }
 });
-
-
-
