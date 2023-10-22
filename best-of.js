@@ -6,8 +6,6 @@ const bestTitle2 = document.querySelector(".best-title2");
 const description = document.querySelector(".description"); 
 const redMark = document.querySelector(".redMark"); 
 
-console.log(box2, '\n', bc1, '\n', bestTitle1,'\n', bestTitle2,'\n', description,'\n', redMark);
-
 // Slides:
 const slide1 = [
     "img/best/img1.webp", 

@@ -69,7 +69,7 @@ body {
     top: 0;
 } */
 .button,
-.sign-in {
+.sign-up {
     padding: 9px 12px;
     border-radius: 4px;
 }
@@ -81,9 +81,10 @@ body {
     border: 1.5px solid #fff;
 }
 
-.sign-in {
+.sign-up {
     background-color: #4fc431;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .nav {
@@ -125,6 +126,13 @@ body {
 .red-box {
     padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.two-inputs {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
 }
 
 .input {
@@ -146,6 +154,7 @@ body {
 
 .strong {
     font-size: 1.5rem;
+    cursor: ;
 }
 
 .input-parent {
